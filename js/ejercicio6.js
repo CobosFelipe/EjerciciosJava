@@ -1,40 +1,40 @@
-// Condicionales
 /**
- * Operadores de comparación
- *  (==) comparamos valores sin importar el tipo de dato
- *  (===) comparamos valores respetando el tipo de dato
- *  (>) Mayor que
- *  (<) Menor que
- *  (>=) Mayor igual
- *  (<=) Menor igual
- *  (!=) Diferente no respeta tipos de datos
- *  (!==) Diferente respetando tipo de datos
- *
+ * Hola equipo espero estén pasando un muy buen fin de semana, aqui les dejo un ejercicio a modo de practica.
+ * no es obligatorio entonces no se preocupen
+ * 
+ * Realizar el pedido de 4 datos personales:
+ * Nombre
+ * Edad
+ * Pais
+ * Habilidad
+ * 
+ * El campo habilidad ponen si es zurda o derecha la persona
+ * El algoritmo es una beca que solo se le dara a personas de colombia o ecuador
+ * Mayores de 18 años
+ * Y que sea zurda
+ * 
+ * Debe salir mensaje de 
+ * "Quedas registrado al cupo de la beca"
+ * "No cumples los requisitos"
  */
 
-/**
- * Operadores logicos
- * (||) - O cualquiera de las condiciones es valida
- * (&&) - Y si o si se deben cumplir todas las condiciones
- */
+let name = ""
+let age = ""
+let country = ""
+let skill = ""
 
-// Declaramos la virable edad
-const age = prompt("Ingresa tu edad");
-const country = prompt("Ingresa tu pais").toLowerCase();
-
-// Condicional if/else "16"
-if (age >= "16" && country !== "alemania") {
-  alert("Se habilito el catalogo de peliculas violentas");
-} else {
-  alert("No tienes permiso de ver este catalogo");
+function recolectData(){
+    name = prompt("Enter your name: ")
+    age = prompt("Enter your age: ")
+    country = prompt("Enter your country: ")
+    skill = prompt("Enter your skill (Left or Right): ")
 }
 
-//
-/**
- * NOTA:
- * Mayusculas (X)
- * Tildes (X)
- * Vacios ()
- * nulos ()
- * Convertir tipos de datos ()
- */
+function showData(){
+    if (age > 18 && country == "Colombia" || "Ecuador" && skill == "Left") {
+        alert("Quedas registrado para el cupo de la beca")
+    }
+    else
+        alert("No cumples con los requisitos")
+
+}
