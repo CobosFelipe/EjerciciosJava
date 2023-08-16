@@ -26,7 +26,7 @@ if (
       window.open("https://goo.su/CBjGmG");
     } else if (actividad === "museo") {
       window.open("https://goo.su/pVgn8hg");
-    }
+    } else alert("Opcion no valida para el segundo valor, intente nuevamente");
   } else if (departamento === "quindio") {
     alert(
       "El lugar seleccionado es: " +
@@ -41,7 +41,7 @@ if (
       window.open("https://goo.su/xmYyZrr");
     } else if (actividad === "museo") {
       window.open("https://goo.su/jA6C");
-    }
+    } else alert("Opcion no valida para el segundo valor, intente nuevamente");
   } else if (departamento === "antioquia") {
     alert(
       "El lugar seleccionado es: " +
@@ -56,7 +56,7 @@ if (
       window.open("https://goo.su/VbWYB");
     } else if (actividad === "museo") {
       window.open("https://goo.su/ilFBd");
-    }
+    } else alert("Opcion no valida para el segundo valor, intente nuevamente");
   } else if (departamento === "valle") {
     alert(
       "El lugar seleccionado es: " +
@@ -71,6 +71,6 @@ if (
       window.open("https://goo.su/A4vtK1");
     } else if (actividad === "museo") {
       window.open("https://goo.su/VHPh");
-    }
+    } else alert("Opcion no valida para el segundo valor, intente nuevamente");
   } else alert("Opcion ingresada es invalida");
 }

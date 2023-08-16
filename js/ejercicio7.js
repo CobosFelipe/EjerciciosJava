@@ -1,4 +1,3 @@
-// Ejercicio de lógica
 let day = prompt("Ingrese día");
 
 if (day === null || day === "") {
@@ -27,10 +26,10 @@ if (day === null || day === "") {
 /**
  * NOTAS:
  * 1- Mayusculas
- * 2 - palabras que no son días
- * 3 - vacio
- * 4 - no le de nada
- * 5 -tildes
+ * 2 -Palabras que no son días
+ * 3 -Vacio
+ * 4 -No le de nada
+ * 5 -Tildes
  *
  * Diagramas de flujo
  */
