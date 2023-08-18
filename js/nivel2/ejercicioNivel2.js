@@ -1,5 +1,9 @@
-// Variables globales
+//Variables globales
 const btnEjercicioUno = document.getElementById("btnEjercicio1");
+const btnEjercicioDos = document.getElementById("btnEjercicio2");
+const btnEjercicioTres = document.getElementById("btnEjercicio3");
+const btnEjercicioCuatro = document.getElementById("btnEjercicio4");
+const btnDatosPersonales = document.getElementById("btnDatosPersonales");
 
 /**
  * Ejercicio 1:
@@ -51,6 +55,36 @@ function ejercicioCuatro() {
   alert(multiplicacion);
 }
 
+function datosPersonales() {
+  // Datos ingresados por el usuario
+  const nombre = prompt("Ingrese su nombre: ");
+  const id = prompt("Ingrese su número de documento: ");
+  const edad = parseInt(prompt("Ingrese su edad: "));
+  const direccion = prompt("Ingrese su dirección: ");
+  const telefono = prompt("Ingrese su telefono: ");
+  const email = prompt("Ingrese su correo electronico: ");
+  const blood = prompt("Ingrese su tipo de sangre: ");
+  const eCivil = prompt("Ingrese su estado civil: ");
+  // Etiquetas H2 a sobreescribir en el HTML
+  const nombreHtml = document.getElementById("nombre");
+  const idHtml = document.getElementById("id");
+  const edadHtml = document.getElementById("edad");
+  const direccionHtml = document.getElementById("direccion");
+  const telefonoHtml = document.getElementById("telefono");
+  const emailHtml = document.getElementById("email");
+  const bloodHtml = document.getElementById("blood");
+  const eCivilHtml = document.getElementById("eCivil");
+  // Guardar datos en el HTML
+  nombreHtml.innerHTML = "Tu nombre es: " + nombre;
+  idHtml.innerHTML = "Tu numero de documento es: " + id;
+  edadHtml.innerHTML = "Tu edad es: " + edad;
+  direccionHtml.innerHTML = "Tu direccion es: " + direccion;
+  telefonoHtml.innerHTML = "Tu telefono es: " + telefono;
+  emailHtml.innerHTML = "Tu correo es: " + email;
+  bloodHtml.innerHTML = "Tu tipo de sangre es: " + blood;
+  eCivilHtml.innerHTML = "Tu eCivil es: " + eCivil;
+}
+
 // Eventos click
 // onclick="ejercicio1()"
 btnEjercicio1.onclick = function () {
@@ -64,4 +98,7 @@ btnEjercicio3.onclick = function () {
 };
 btnEjercicio4.onclick = function () {
   ejercicioCuatro();
+};
+btnDatosPersonales.onclick = function () {
+  datosPersonales();
 };
